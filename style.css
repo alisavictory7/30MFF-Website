@@ -5,7 +5,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+@media only screen and (max-width: 600px) {
+    #main {margin-left: 0}
+    .home-container {
+        position: relative;
+        top: 0;
+        margin-top: 60px; /* Push below navbar */
+    }
+}
+
 
 #background-img {
     width: 100%;
@@ -19,13 +27,41 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     color: white;
   }
 
+#landing-h1 {
+    font-size:4vw;
+}
+
+#landing-h2 {
+    font-size:3vw;
+}
+
 /* Centered text */
 .top-centered {
     position: absolute;
-    top: 18%;
+    
+    top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
+}
+
+.bottom-centered {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+#landing-start-button {
+    font-size: 1.6vw;
+    background-color: #7f7d7d;
+    color: white;
+    display: inline-block;  /* Instead of block */
+    padding: 20px 62px;
+    width: auto;           /* Let content determine width */
+    max-width: fit-content; /* Ensure it doesn't expand beyond content */  
 }
 
