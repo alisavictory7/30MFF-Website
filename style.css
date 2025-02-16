@@ -1,6 +1,7 @@
 body, h1,h2,h3,h4,h5,h6 {
     font-family: "Montserrat", sans-serif;
 }
+
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;}
@@ -19,8 +20,23 @@ body, h1,h2,h3,h4,h5,h6 {
 
 #background-img {
     width: 100%;
-    height: auto;
-    
+    height: 100%;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* For 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Container holding the image and the text */
@@ -66,7 +82,255 @@ body, h1,h2,h3,h4,h5,h6 {
     padding: 20px 62px;
     width: auto;           /* Let content determine width */
     max-width: fit-content; /* Ensure it doesn't expand beyond content */  
+    font-weight: bolder;
+    text-decoration: none;
 }
+
+
+#section-break {
+  padding:100px;
+}
+
+
+
+
+
+.img-container {
+  position: relative;
+  overflow: visible !important; /* Allow overflow while keeping positioning context */
+  width: 100%;
+  /* border: 10px solid white; */
+  padding-top: 56.25%; /*Maintain a 16:9 aspect ratio (adjust as needed) */
+  cursor: pointer;
+}
+
+.room-img {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover; Maintains image aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Scales with the container */
+  height: 100%; /* Maintains aspect ratio */
+  display: block; /* Removes extra space below the image */
+  object-fit: cover;
+}
+
+
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: min(15vw, 300px);
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  margin-left: 0; /* Remove fixed negative margin */
+  white-space: normal; /* Allow text wrapping */
+  font-size: 1.5cqmin;
+  max-height: 15vh; /* Prevent vertical overflow */
+  overflow-y: auto; /* Enable scrolling for long content */
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+
+.room1-special-object, .room2-special-object, .room3-special-object  {
+  position: absolute;
+  transition: all 0.2s; /* Smooth repositioning */
+  cursor: pointer;
+
+  /* Comment below for testing, uncomment for debugging */
+  /* border: 1px solid rgb(218, 14, 14);
+  background: rgba(0,0,0,0.5); */
+
+  /* Uncomment below for testing, comment for debugging */
+  background: rgba(0,0,0,0);
+  border: 0px;
+}
+
+#room1-mug {
+  top: 84%; 
+  left: 47.7%;
+  transform: translate(-50%, -50%); /* Center button at coordinates */
+  padding: 4.1% 2.7%; /* Responsive padding */
+}
+
+#room1-potted-plant {
+  top: 44%; 
+  left: 59.3%;
+  transform: translate(-50%, -50%); /* Center button at coordinates */
+  padding: 4.3% 3.7%; /* Responsive padding */
+}
+
+
+#room2-cooking-pan {
+  top: 56.5%; 
+  left: 54%;
+  transform: translate(-50%, -50%); /* Center button at coordinates */
+  padding: 0.5% 1.5%; /* Responsive padding */
+}
+
+#room2-coffee-beans {
+  top: 32.5%; 
+  left: 18.3%;
+  transform: translate(-50%, -50%); /* Center button at coordinates */
+  padding: 2.2% 1.2%; /* Responsive padding */
+}
+
+
+#room3-cafe-sign {
+  top: 55%; 
+  left: 7.5%;
+  transform: translate(-50%, -50%); /* Center button at coordinates */
+  padding: 0.8% 2%; /* Responsive padding */
+}
+
+#room3-piano {
+  top: 49.6%; 
+  left: 89.65%;
+  transform: translate(-50%, -50%); /* Center button at coordinates */
+  padding: 1.5% 1.83%; /* Responsive padding */
+}
+
+
+
+/* Modal */
+/* The Modal (background) */
+.modal {
+  display: none;
+  justify-content: center; /* Horizontal centering */
+  align-items: flex-start; /* Vertical centering */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px; /* Match w3-content's default max-width */
+  left: 0;
+  right: 0; /* Horizontal centering anchor */
+  
+  /* background-color: rgb(0,0,0); Fallback color */
+  /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #f7ffc5f6;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #888;
+  font-weight: bolder;
+  font-size: 2.5cqmin;
+  color: rgb(50, 50, 46);
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+/* Responsive Image Grid - BEGIN*/
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive Image Grid - END*/
+
+
 
 * {box-sizing:border-box}
 
@@ -157,45 +421,7 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 
 
-/* Responsive Image Grid - BEGIN*/
 
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-/* Responsive Image Grid - END*/
 
 
 

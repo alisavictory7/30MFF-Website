@@ -5,7 +5,11 @@
   <title>W3.CSS Template</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preload" href="media/588234__mehraniiii__win.wav" as="audio">
+
   <!-- Link to CSS file -->
+   
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
@@ -13,10 +17,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 
+
 </head>
 
 
 <body class="w3-2021-cerulean">
+
 
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-2019-galaxy-blue">
@@ -65,7 +71,7 @@
         <h1 id="landing-h1">Every Cup Tells A Story.</h1>
         <h2 id="landing-h2">Shall we begin?</h1>
       </div>
-      <button type="button" class="bottom-centered" id="landing-start-button">Start</button>
+      <a href='#moments-in-time' class="bottom-centered" id="landing-start-button">Start</a>
       <a
         href="https://www.freepik.com/free-photo/man-drinks-coffee-from-enamel-cup-outdoors_11253682.htm#fromView=search&page=2&position=11&uuid=3fea329a-63ed-4464-8642-664a4ea90667&query=tea+outdoor">Designed
         by Freepik</a>
@@ -73,27 +79,221 @@
 
 
     <!-- Section [2] Moments in Time  -->
+
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="moments-in-time">
       <h1 class="w3-text-black">Moments In Time</h1>
-      <hr style="width:200px" class="w3-opacity">
-      <h2 class="w3-text-black">The Study Nook</h2>
-      <p class="w3-text-black">Come and enjoy a cozy campus corner. Here's where Alisa reflects on balancing academics with healthcare.</p>
-      
+      <hr style="width:200px; margin: 0px 0px 50px 0px" class="w3-opacity">
 
-      <h2 class="w3-text-black">The Garden Room</h2>
-      <p class="w3-text-black">Come and enjoy a serene outdoor setting. Here's where Alisa shares her thoughts on finding beauty in small
-        things.</p>
+
+      <!-- Grid Option -->
+      <center>
+        <h2 class="w3-padding-16 w3-text-black">What would you like to do?</h2>
+      </center>
+      <div class="w3-row-padding" style="margin:0px -16px 200px -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-indigo w3-xlarge w3-padding-32">Watch "Relax with Alisa" Videos</li>
+            <li class="w3-padding-16">Relax & Make Tea Together</li>
+            <li class="w3-padding-16">Chat with Friends</li>
+            <li class="w3-padding-16">Study with Alisa</li>
+            <li class="w3-pale-blue w3-padding-24">
+              <a href="#moments-in-time-choice-1" class="w3-button w3-white w3-padding-large w3-hover-indigo">I'd like
+                this!</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-indigo w3-xlarge w3-padding-32">Play "Spot Special Objects!" Game</li>
+            <li class="w3-padding-16">Mysterious Room X</li>
+            <li class="w3-padding-16">Mysterious Room Y</li>
+            <li class="w3-padding-16">Mysterious Room Z</li>
+            <li class="w3-pale-blue w3-padding-24">
+              <a href="#moments-in-time-choice-2" class="w3-button w3-white w3-padding-large w3-hover-indigo">I'd like
+                this!</a>
+            </li>
+          </ul>
+        </div>
+        <!-- End Grid Option -->
+      </div>
+
+
+      <center>
+        <h2 id="moments-in-time-choice-1" class="w3-padding-16 w3-text-black"><strong>Watch "Relax with Alisa"
+            Videos</strong></h2>
+      </center>
+      <h2 class="w3-text-black">The Tea Room</h2>
+      <p class="w3-text-black">Come and enjoy a serene outdoor setting, making some tea and sipping some tea. </p>
+      <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1g9RxTGColbBhcYw-bS8QhNdWPmyMNPiS/preview" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
 
       <h2 class="w3-text-black">The Lounge Room</h2>
-      <p class="w3-text-black">Come and enjoy a nostalgic space for stories and friendship bonding over evening talk sessions.</p>
+      <p class="w3-text-black">Come and enjoy a nostalgic space for stories and friendship bonding.</p>
+      <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1zttvcp7s_lGbx4NR8D9vWrK4VpWdSWr8/preview" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
 
+      <h2 class="w3-text-black">The Study Room</h2>
+      <p class="w3-text-black">Come and enjoy a cozy campus corner. Here you can enjoy studying with me, or just watch me :P</p>
+      <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1U9LDaqcO8N3CoIPh330HD9NUhDARqKNB/preview" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+
+
+      <div id="section-break"></div>
+
+
+      <center>
+        <h2 id="moments-in-time-choice-2" class="w3-padding-16 w3-text-black"><strong>Play "Spot Special Objects!"
+            Game</strong></h2>
+      </center>
+      <h2 class="w3-text-black">Mysterious Room X</h2>
+      <p class="w3-text-black"> Find the two special objects by clicking on your guess!</p>
+
+
+      <!-- The Modal -->
+      <div id="congrats-modal-room1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <center>
+            <p>Congratulations on finding a Special Object!</p>
+          </center>
+        </div>
+
+      </div>
+      <div class="img-container">
+        <img class="room-img" src="media\igor-starkov--Vgscuq5MN8-unsplash.jpg"
+          alt="brown wooden dining set inside house">
+
+        <button onclick="openModal(), openPopup()" class="popup room1-special-object" id="room1-mug">
+          <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <span class="popuptext" id="myPopup">A cup of unknown substance... probably coffee.</span>
+
+        </button>
+
+        <button onclick="openModal(), openPopup()" class="popup room1-special-object" id="room1-potted-plant">
+          <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <span class="popuptext" id="myPopup">A potted plant positioned well to receive sunlight. Sunlight is important
+            for our growth!</span>
+        </button>
+
+      </div>
+      <center>
+        <p class="w3-text-grey">Photo by <a
+            href="https://unsplash.com/@igorstarkoff?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Igor
+            Starkov</a> on <a
+            href="https://unsplash.com/photos/brown-wooden-dining-set-inside-house--Vgscuq5MN8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>
+      </center>
+
+
+
+
+      <h2 class="w3-text-black">Mysterious Room Y</h2>
+      <p class="w3-text-black"> Find the two special objects by clicking on your guess! </p>
+
+      <!-- The Modal -->
+      <div id="congrats-modal-room2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <center>
+            <p>Congratulations on finding a Special Object!</p>
+          </center>
+        </div>
+
+      </div>
+
+      <div class="img-container">
+        <img class="room-img" src="media\toa-heftiba-kWKrV66C_8Y-unsplash.jpg"
+          alt="white wooden shelf near wooden table">
+
+        <button onclick="openModal(), openPopup()" class="popup room2-special-object" id="room2-cooking-pan">
+          <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <span class="popuptext" id="myPopup">Perhaps a cooking pan. In that case, you can use it for high-heat cooking methods like sauteing, frying, searing, and reducing.</span>
+
+        </button>
+
+        <button onclick="openModal(), openPopup()" class="popup room2-special-object" id="room2-coffee-beans">
+          <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <span class="popuptext" id="myPopup">
+          A packet displaying "Don Enrique." So it possibly contains beans from Nariño, southernmost district of Colombia. One might expect chocolate and cherry flavors, and a creamy body.</span>
+        </button>
+      </div>
+      <center>
+        <p class="w3-text-grey">
+          Photo by <a
+            href="https://unsplash.com/@heftiba?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Toa
+            Heftiba</a> on <a
+            href="https://unsplash.com/photos/white-wooden-shelf-near-wooden-table-kWKrV66C_8Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>
+      </center>
+
+
+      <h2 class="w3-text-black">Mysterious Room Z</h2>
+      <p class="w3-text-black"> Find the two special objects by clicking on your guess! </p>
+
+      <!-- The Modal -->
+      <div id="congrats-modal-room3" class="modal">
+      
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <center>
+            <p>Congratulations on finding a Special Object!</p>
+          </center>
+        </div>
+      
+      </div>
+
+      <div class="img-container">
+        <img class="room-img" src="media\sebastian-schuppik-H7xTpvBjJS4-unsplash.jpg" alt="tables and chairs inside building">
+      
+        <button onclick="openModal(), openPopup()" class="popup room3-special-object" id="room3-cafe-sign">
+          <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <span class="popuptext" id="myPopup">Berlinka. It is not only a traditional old fashioned cafe with high ceilings
+            and thonet chairs, it is also the café of the Slovak National Gallery, a social space for various events, such as
+            book launches, workshops, discussions, lectures, film screenings, concerts, and parties.</span>
+        </button>
+      
+        <button onclick="openModal(), openPopup()" class="popup room3-special-object" id="room3-piano">
+          <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <span class="popuptext" id="myPopup">
+            We might not know how old this piano is, but it's said that over 125 years ago the Berlin family bought The Café
+            Hungária from Mr Orbane and renamed it Café Berlin (now Cafe Berlinka). Local doctors, officers, and the cream of
+            Viennese society would come and meet after disembarking the tram at the last stop from Vienna. Perhaps this piano
+            still stands from old times.</span>
+        </button>
+      </div>
+      
+      <center>
+        <p class="w3-text-grey">
+          Photo by <a
+            href="https://unsplash.com/@supa_95?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sebastian
+            Schuppik</a> on <a
+            href="https://unsplash.com/photos/tables-and-chairs-inside-building-H7xTpvBjJS4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>
+      </center>
     </div>
 
     <!-- Section [3] Wander & Wonder -->
     <div class="w3-padding-64 w3-content" id="wander-and-wonder">
       <h1 class="w3-text-black">Wander & Wonder</h2>
         <hr style="width:200px" class="w3-opacity">
+      <p class="w3-text-black">Explore many wonders of the world!</p>
     </div>
+
+   
 
     <div class="row">
       <div class="column">
@@ -144,7 +344,7 @@
       <div class="column">
         <img src="media/20230823_182322.jpg">
         <img src="media/20230207_135140.jpg">
-        
+
         <img src="media/20230630_110629.jpg">
         <img src="media/20220401_101803.jpg">
         <img src="media/20220430_160952.jpg">
@@ -164,6 +364,10 @@
     <div class="w3-padding-64 w3-content w3-text-grey" id="a-cup-for-every-season">
       <h1 class="w3-text-black">A Cup for Every Season</h1>
       <hr style="width:200px" class="w3-opacity">
+
+      <p class="w3-text-black">Enjoy a new cup of a new season!</p>
+
+
       <!-- Slideshow container -->
       <div class="slideshow-container">
 
@@ -222,7 +426,7 @@
       <!-- End Portfolio Section -->
     </div>
 
-    
+
     <!-- Section [5] Share Your Tales  -->
 
 
@@ -231,141 +435,48 @@
       <h1 class="w3-text-black">Share Your Tales</h1>
       <hr style="width:200px" class="w3-opacity">
 
-      <div id="share-your-tales-bg-img">
-        
+      <p class="w3-text-black"><b>Feel free to reach out to me using the following contacts:</b> </p>
 
-        <form action="/action_page.php" class="container" target="_blank">
+      <div class="w3-section">
+        <p class="w3-text-black"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Whatsapp: +62 811 8777 085</p>
+        <p class="w3-text-black"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: alisavictory7@gmail.com</p>
+        <p class="w3-text-black"><i class="fab fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Instagram: alisa_victory7</p>
+      </div><br>
+
+      <p class="w3-text-black fa-bold"><b>Alternatively, share your tale at your convenience:</b> </p>
+
+
+      <div id="share-your-tales-bg-img">
+
+        
+        <form action="mailto:alisavictory7@gmail.com?subject=New%20Story%20Submission" 
+      method="POST" 
+      enctype="text/plain"
+      onsubmit="setTimeout(() => { window.location.href = 'thank-you.html'; }, 1000);" class="container">
           <p>Let's get in touch. Send me a message:</p>
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-          <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+
+          <label for="name">Username:</label>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Username"  id="name" name="name" required></p>
+          
+          <label for="story">Your Story:</label>
+          <p></p><textarea class="w3-input w3-padding-16" type="text" id="story" placeholder="Message" name="story" rows="5" required></textarea>
+
+
           <p>
             <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              <i class="fa fa-paper-plane"></i> SHARE STORY
             </button>
           </p>
         </form>
         <!-- End Contact Section -->
-        
-      </div>
 
-      <div class="w3-section">
-        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Abu Dhabi, United Arab Emirates</p>
-        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Whatsapp: +62 811 8777 085</p>
-        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: alisavictory7@mail.com</p>
-      </div><br>
-      
+      </div>
     </div>
-
-
-
-
-    <div>
-
-      <h3 class="w3-padding-16 w3-text-black">My Skills</h3>
-      <p class="w3-wide">Photography</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-      </div>
-      <p class="w3-wide">Web Design</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-      </div>
-      <p class="w3-wide">Photoshop</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-      </div><br>
-
-      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">11+</span><br>
-          Partners
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">55+</span><br>
-          Projects Done
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">89+</span><br>
-          Happy Clients
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">150+</span><br>
-          Meetings
-        </div>
-      </div>
-
-      <button class="w3-button w3-light-grey w3-padding-large w3-section">
-        <i class="fa fa-download"></i> Download Resume
-      </button>
-
-      <!-- Grid for pricing tables -->
-      <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-            <li class="w3-padding-16">Web Design</li>
-            <li class="w3-padding-16">Photography</li>
-            <li class="w3-padding-16">5GB Storage</li>
-            <li class="w3-padding-16">Mail Support</li>
-            <li class="w3-padding-16">
-              <h2>$ 10</h2>
-              <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-            </li>
-          </ul>
-        </div>
-
-        <div class="w3-half">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-            <li class="w3-padding-16">Web Design</li>
-            <li class="w3-padding-16">Photography</li>
-            <li class="w3-padding-16">50GB Storage</li>
-            <li class="w3-padding-16">Endless Support</li>
-            <li class="w3-padding-16">
-              <h2>$ 25</h2>
-              <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-            </li>
-          </ul>
-        </div>
-        <!-- End Grid/Pricing tables -->
-      </div>
-
-      <!-- Testimonials -->
-      <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
-      <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-      <p>John Doe saved us from a web disaster.</p><br>
-
-      <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-      <p>No one is better than John Doe.</p>
-      <!-- End About Section -->
-    </div>
-
-
-
-
-
 
     <!-- Footer -->
 
 
     <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
       <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
           class="w3-hover-text-green">w3.css</a></p>
       <!-- End footer -->
