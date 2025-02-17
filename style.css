@@ -1,31 +1,36 @@
+
+
+/* --- General Styles --- */
 body, h1,h2,h3,h4,h5,h6 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; /* Sets Montserrat font for body and headings */
 }
 
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
+.w3-row-padding img {margin-bottom: 12px} /* Adds bottom margin to images in w3-row-padding */
+
+/* --- Sidebar --- */
+.w3-sidebar {width: 120px;} /* Sets sidebar width to 120px */
+#main {margin-left: 120px} /* Adds left margin to main content to accommodate sidebar */
+
+/* --- Responsive Sidebar & Home Container --- */
 @media only screen and (max-width: 600px) {
-    #main {margin-left: 0}
+    #main {margin-left: 0} /* Removes sidebar margin on small screens */
     .home-container {
         position: relative;
         top: 0;
-        margin-top: 60px; /* Push below navbar */
+        margin-top: 60px; /* Push home container below navbar on small screens */
     }
 }
 
-
+/* --- Background Image --- */
 #background-img {
     width: 100%;
-    height: 100%;
+    height: 100%; /* Makes background image cover the entire container */
 }
 
+/* --- Responsive Video Container --- */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* For 16:9 aspect ratio */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive videos */
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -36,141 +41,124 @@ body, h1,h2,h3,h4,h5,h6 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; /* Makes iframe fill the video container */
 }
 
-/* Container holding the image and the text */
+/* --- Home Container & Text Positioning --- */
 .home-container {
-    position: relative;
+    position: relative; /* Establishes positioning context for child elements */
     text-align: center;
-    color: white;
+    color: white; /* Default text color for home container */
   }
 
 #landing-h1 {
-    font-size:4vw;
+    font-size:4vw; /* Responsive font size for main landing heading */
 }
 
 #landing-h2 {
-    font-size:3vw;
+    font-size:3vw; /* Responsive font size for secondary landing heading */
 }
 
-/* Centered text */
+/* --- Centered Text Elements --- */
 .top-centered {
-    position: absolute;
-    
+    position: absolute; /* Positions text relative to home container */
     top: 17%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Centers text horizontally and vertically */
     width: 100%;
     text-align: center;
 }
 
 .bottom-centered {
-    position: absolute;
+    position: absolute; /* Positions text relative to home container */
     bottom: 15%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Centers text horizontally and vertically */
     width: 100%;
     text-align: center;
 }
 
+/* --- Landing Page Start Button --- */
 #landing-start-button {
-    font-size: 1.6vw;
+    font-size: 1.6vw; /* Responsive font size for button text */
     background-color: #7f7d7d;
     color: white;
-    display: inline-block;  /* Instead of block */
+    display: inline-block;  /* Button width adjusts to content */
     padding: 20px 62px;
-    width: auto;           /* Let content determine width */
-    max-width: fit-content; /* Ensure it doesn't expand beyond content */  
+    width: auto;
+    max-width: fit-content; /* Ensures button doesn't exceed content width */
     font-weight: bolder;
-    text-decoration: none;
+    text-decoration: none; /* Removes underline from link */
 }
 
-
+/* --- Section Break Styling --- */
 #section-break {
-  padding:100px;
+  padding:100px; /* Adds vertical padding to create section breaks */
 }
 
-
-
-
-
+/* --- Responsive Image Container for Rooms --- */
 .img-container {
-  position: relative;
-  overflow: visible !important; /* Allow overflow while keeping positioning context */
+  position: relative; /* Positioning context for room images */
+  overflow: visible !important; /* Allows overflow for popups while maintaining layout */
   width: 100%;
-  /* border: 10px solid white; */
-  padding-top: 56.25%; /*Maintain a 16:9 aspect ratio (adjust as needed) */
-  cursor: pointer;
+  padding-top: 56.25%; /* 16:9 aspect ratio for responsive images */
+  cursor: pointer; /* Indicates clickable image */
 }
 
 .room-img {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  object-fit: cover; Maintains image aspect ratio */
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Scales with the container */
-  height: 100%; /* Maintains aspect ratio */
-  display: block; /* Removes extra space below the image */
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block; /* Prevents extra space below image */
+  object-fit: cover; /* Ensures image covers container and maintains aspect ratio */
 }
 
-
-
-
-/* Popup container */
+/* --- Popup Styles --- */
 .popup {
-  position: relative;
-  display: inline-block;
-  
+  position: relative; /* Positioning context for popup text */
+  display: inline-block; /* Allows popup to sit inline with other elements */
 }
 
-/* The actual popup (appears on top) */
 .popup .popuptext {
-  visibility: hidden;
-  width: min(15vw, 300px);
+  visibility: hidden; /* Hides popup by default */
+  width: min(15vw, 300px); /* Responsive width, max 300px */
   background-color: #555;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  position: absolute; /* Positions popup relative to .popup container */
+  z-index: 1; /* Ensures popup is on top */
+  bottom: 125%; /* Positions popup above the element */
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-  margin-left: 0; /* Remove fixed negative margin */
-  white-space: normal; /* Allow text wrapping */
-  font-size: 1.5cqmin;
-  max-height: 15vh; /* Prevent vertical overflow */
-  overflow-y: auto; /* Enable scrolling for long content */
+  transform: translateX(-50%); /* Centers popup horizontally */
+  white-space: normal; /* Allows text wrapping in popup */
+  font-size: 1.5cqmin; /* Responsive font size based on container query unit */
+  max-height: 15vh; /* Limits popup height */
+  overflow-y: auto; /* Adds scrollbar if popup content exceeds max height */
 }
 
-/* Popup arrow */
+/* --- Popup Arrow Style --- */
 .popup .popuptext::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 100%; /* Positions arrow below the popup text */
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: #555 transparent transparent transparent; /* Creates arrow shape */
 }
 
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
+/* --- Show/Hide Popup & Fade Animation --- */
 .popup .show {
-  visibility: visible;
+  visibility: visible; /* Makes popup visible */
   -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+  animation: fadeIn 1s /* Applies fade-in animation */
 }
 
-/* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
@@ -181,101 +169,94 @@ body, h1,h2,h3,h4,h5,h6 {
   to {opacity:1 ;}
 }
 
-
-
-
+/* --- Special Interactive Objects in Rooms --- */
 .room1-special-object, .room2-special-object, .room3-special-object  {
-  position: absolute;
-  transition: all 0.2s; /* Smooth repositioning */
-  cursor: pointer;
+  position: absolute; /* Allows precise positioning within room images */
+  transition: all 0.2s; /* Smooth transition for hover effects (if any) */
+  cursor: pointer; /* Indicates interactive element */
 
   /* Comment below for testing, uncomment for debugging */
   /* border: 1px solid rgb(218, 14, 14);
-  background: rgba(0,0,0,0.5); */
+  background: rgba(0,0,0,0.5); */ /* For debugging: Shows object boundaries */
 
   /* Uncomment below for testing, comment for debugging */
-  background: rgba(0,0,0,0);
-  border: 0px;
+  background: rgba(0,0,0,0); /* Makes object background transparent for interaction */
+  border: 0px; /* Removes border */
 }
 
+/* --- Room 1 Special Object Positioning & Sizing --- */
 #room1-mug {
-  top: 84%; 
+  top: 84%;
   left: 47.7%;
-  transform: translate(-50%, -50%); /* Center button at coordinates */
-  padding: 4.1% 2.7%; /* Responsive padding */
+  transform: translate(-50%, -50%); /* Centers object at specified coordinates */
+  padding: 4.1% 2.7%; /* Responsive padding based on container width */
 }
 
 #room1-potted-plant {
-  top: 44%; 
+  top: 44%;
   left: 59.3%;
-  transform: translate(-50%, -50%); /* Center button at coordinates */
-  padding: 4.3% 3.7%; /* Responsive padding */
+  transform: translate(-50%, -50%); /* Centers object at specified coordinates */
+  padding: 4.3% 3.7%; /* Responsive padding based on container width */
 }
 
-
+/* --- Room 2 Special Object Positioning & Sizing --- */
 #room2-cooking-pan {
-  top: 56.5%; 
+  top: 56.5%;
   left: 54%;
-  transform: translate(-50%, -50%); /* Center button at coordinates */
-  padding: 0.5% 1.5%; /* Responsive padding */
+  transform: translate(-50%, -50%); /* Centers object at specified coordinates */
+  padding: 0.5% 1.5%; /* Responsive padding based on container width */
 }
 
 #room2-coffee-beans {
-  top: 32.5%; 
+  top: 32.5%;
   left: 18.3%;
-  transform: translate(-50%, -50%); /* Center button at coordinates */
-  padding: 2.2% 1.2%; /* Responsive padding */
+  transform: translate(-50%, -50%); /* Centers object at specified coordinates */
+  padding: 2.2% 1.2%; /* Responsive padding based on container width */
 }
 
-
+/* --- Room 3 Special Object Positioning & Sizing --- */
 #room3-cafe-sign {
-  top: 55%; 
+  top: 55%;
   left: 7.5%;
-  transform: translate(-50%, -50%); /* Center button at coordinates */
-  padding: 0.8% 2%; /* Responsive padding */
+  transform: translate(-50%, -50%); /* Centers object at specified coordinates */
+  padding: 0.8% 2%; /* Responsive padding based on container width */
 }
 
 #room3-piano {
-  top: 49.6%; 
+  top: 49.6%;
   left: 89.65%;
-  transform: translate(-50%, -50%); /* Center button at coordinates */
-  padding: 1.5% 1.83%; /* Responsive padding */
+  transform: translate(-50%, -50%); /* Centers object at specified coordinates */
+  padding: 1.5% 1.83%; /* Responsive padding based on container width */
 }
 
-
-
-/* Modal */
-/* The Modal (background) */
+/* --- Modal Styles --- */
 .modal {
-  display: none;
-  justify-content: center; /* Horizontal centering */
-  align-items: flex-start; /* Vertical centering */
+  display: none; /* Hides modal by default */
+  justify-content: center; /* Centers modal content horizontally */
+  align-items: flex-start; /* Aligns modal content to the top vertically */
   margin-left: auto;
   margin-right: auto;
-  max-width: 980px; /* Match w3-content's default max-width */
+  max-width: 980px; /* Limits modal width to match w3-content */
   left: 0;
-  right: 0; /* Horizontal centering anchor */
-  
-  /* background-color: rgb(0,0,0); Fallback color */
-  /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+  right: 0; /* Centers modal horizontally */
 }
 
-/* Modal Content */
+/* --- Modal Content Box --- */
 .modal-content {
   background-color: #f7ffc5f6;
   margin: 0 auto;
   padding: 5px;
   border: 1px solid #888;
   font-weight: bolder;
-  font-size: 2.5cqmin;
+  font-size: 2.5cqmin; /* Responsive font size */
   color: rgb(50, 50, 46);
-  width: 80%;
+  width: 80%; /* Modal content width */
 }
 
-/* The Close Button */
+/* --- Modal Close Button --- */
 .close {
   color: #aaaaaa;
-  float: right;
+  float: right; /* Positions close button to the right */
   font-size: 28px;
   font-weight: bold;
 }
@@ -284,24 +265,18 @@ body, h1,h2,h3,h4,h5,h6 {
 .close:focus {
   color: #000;
   text-decoration: none;
-  cursor: pointer;
+  cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
-
-
-
-/* Responsive Image Grid - BEGIN*/
-
-
+/* --- Responsive Image Grid Styles - BEGIN --- */
 .row {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* Enables flexbox layout */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
+  flex: 25%; /* Each column takes 25% width in a row */
   max-width: 25%;
   padding: 0 4px;
 }
@@ -309,44 +284,43 @@ body, h1,h2,h3,h4,h5,h6 {
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-  width: 100%;
+  width: 100%; /* Image takes full width of the column */
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* --- Responsive Grid for Medium Screens --- */
 @media screen and (max-width: 800px) {
   .column {
-    flex: 50%;
+    flex: 50%; /* Columns take 50% width on medium screens (two columns) */
     max-width: 50%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* --- Responsive Grid for Small Screens --- */
 @media screen and (max-width: 600px) {
   .column {
-    flex: 100%;
+    flex: 100%; /* Columns take 100% width on small screens (single column) */
     max-width: 100%;
   }
 }
-
-/* Responsive Image Grid - END*/
-
+/* --- Responsive Image Grid Styles - END --- */
 
 
-* {box-sizing:border-box}
+/* --- Slideshow Styles - BEGIN --- */
+* {box-sizing:border-box} /* Ensures padding and border are included in element's total width and height */
 
-/* Slideshow container */
+/* --- Slideshow Container --- */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: auto; /* Centers slideshow container horizontally */
 }
 
-/* Hide the images by default */
+/* --- Hide Slides by Default --- */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
+/* --- Navigation Buttons (Prev & Next) --- */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -357,23 +331,23 @@ body, h1,h2,h3,h4,h5,h6 {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+  transition: 0.6s ease; /* Smooth transition for hover effect */
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  user-select: none; /* Prevents text selection on button click */
 }
 
-/* Position the "next button" to the right */
+/* --- Position "Next Button" to the Right --- */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* --- Hover Effect for Navigation Buttons --- */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8); /* Darker background on hover */
 }
 
-/* Caption text */
+/* --- Slideshow Caption Text --- */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -384,7 +358,7 @@ body, h1,h2,h3,h4,h5,h6 {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+/* --- Slideshow Number Text (e.g., 1/3) --- */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -393,7 +367,7 @@ body, h1,h2,h3,h4,h5,h6 {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* --- Slideshow Dots/Indicators --- */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -402,14 +376,14 @@ body, h1,h2,h3,h4,h5,h6 {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease; /* Smooth transition for active/hover state */
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #717171; /* Darker background for active/hover dots */
 }
 
-/* Fading animation */
+/* --- Fade Animation for Slides --- */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -419,75 +393,66 @@ body, h1,h2,h3,h4,h5,h6 {
   from {opacity: .4}
   to {opacity: 1}
 }
+/* --- Slideshow Styles - END --- */
 
-
-
-
-
-
-/* Form on Image - BEGIN */
+/* --- Form on Image Styles - BEGIN --- */
 
 body, html {
-  height: 100%;
+  height: 100%; /* Ensures body and html take full viewport height */
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
 }
 
+/* --- Background Image for Form Section --- */
 #share-your-tales-bg-img {
-  /* The image used */
-  background-image: url("media/20211027_171415.jpg");
-
-  /* Control the height of the image */
+  background-image: url("media/20211027_171415.jpg"); /* Sets background image */
   min-height: 380px;
-  height: 600px;
-
-  /* Center and scale the image nicely */
+  height: 600px; /* Sets height for background image section */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-size: cover; /* Ensures background image covers the area */
+  position: relative; /* Positioning context for form container */
 }
 
-/* Add styles to the form container */
+/* --- Form Container Styling --- */
 .container {
-  position: absolute;
-  right: 0;
+  position: absolute; /* Positions form container relative to background image section */
+  right: 0; /* Aligns form to the right */
   margin: 20px;
-  max-width: 300px;
+  max-width: 300px; /* Maximum width for the form */
   padding: 16px;
-  background-color: white;
+  background-color: white; /* White background for form container */
 }
 
-/* Full-width input fields */
+/* --- Input Field Styling --- */
   input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: #f1f1f1; /* Light grey background for input fields */
 }
 
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+  background-color: #ddd; /* Slightly darker background on focus */
+  outline: none; /* Removes default focus outline */
 }
 
-/* Set a style for the submit button */
+/* --- Submit Button Styling --- */
 .btn {
-  background-color: #04AA6D;
+  background-color: #04AA6D; /* Green background for button */
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.9; /* Slightly transparent button */
 }
 
 .btn:hover {
-  opacity: 1;
+  opacity: 1; /* Fully opaque button on hover */
 }
 
-
-/* Form on Image - END */
+/* --- Form on Image Styles - END --- */

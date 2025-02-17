@@ -1,106 +1,167 @@
+
 <!DOCTYPE html>
+<!-- Declares the document type and version of HTML -->
 <html>
+<!-- Root element of the HTML document -->
 
 <head>
+  <!-- Contains meta-information about the HTML document, like character set, title, etc. -->
   <title>W3.CSS Template</title>
+  <!-- Sets the title that appears in the browser tab or window title bar -->
   <meta charset="UTF-8">
+  <!-- Specifies the character encoding for the document as UTF-8, supporting a wide range of characters -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Configures the viewport for responsive web design, setting the width to the device width and initial zoom level to 1 -->
 
   <link rel="preload" href="media/588234__mehraniiii__win.wav" as="audio">
+  <!-- Preloads the audio file to improve loading performance -->
 
   <!-- Link to CSS file -->
-   
+
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Links to the W3.CSS framework for styling -->
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+  <!-- Links to W3.CSS color themes for 2021 -->
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+  <!-- Links to W3.CSS color themes for 2019 -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <!-- Links to Google Fonts, specifically the Montserrat font family -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Links to Font Awesome for icons -->
   <link rel="stylesheet" href="style.css">
+  <!-- Links to a custom stylesheet named "style.css" for additional styling -->
 
 
 </head>
 
 
 <body class="w3-2021-cerulean">
+  <!-- The main content of the HTML document starts here -->
+  <!-- Sets the background color of the body using a W3.CSS color class -->
 
 
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-2019-galaxy-blue">
+    <!-- Sidebar navigation element, styled using W3.CSS classes for responsiveness, size, visibility, alignment and color -->
     <!-- Avatar image in top left corner -->
     <img src="media/logo.png" style="width:100%">
+    <!-- Logo image displayed at the top of the sidebar -->
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-2021-cerulean">
+      <!-- Home link in the sidebar -->
       <i class="fa fa-home w3-xxlarge"></i>
+      <!-- Home icon from Font Awesome -->
       <p>Home</p>
+      <!-- Text label for the Home link -->
     </a>
     <a href="#moments-in-time" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <!-- "Moments In Time" link in the sidebar, linking to a section with the ID "moments-in-time" -->
       <i class="fa fa-hourglass-half w3-xxlarge"></i>
+      <!-- Hourglass icon from Font Awesome -->
       <p>Moments In Time</p>
+      <!-- Text label -->
     </a>
     <a href="#wander-and-wonder" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <!-- "Wander & Wonder" link, linking to section "wander-and-wonder" -->
       <i class="fa fa-route w3-xxlarge"></i>
+      <!-- Route icon from Font Awesome -->
       <p>Wander & Wonder</p>
+      <!-- Text label -->
     </a>
     <a href="#a-cup-for-every-season" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <!-- "A Cup For Every Season" link, linking to section "a-cup-for-every-season" -->
       <i class="fa fa-mug-hot w3-xxlarge"></i>
+      <!-- Mug icon from Font Awesome -->
       <p>A Cup For Every Season</p>
+      <!-- Text label -->
     </a>
     <a href="#share-your-tales" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <!-- "Share Your Tales" link, linking to section "share-your-tales" -->
       <i class="fa fa-comments w3-xxlarge"></i>
+      <!-- Comments icon from Font Awesome -->
       <p>Share Your Tales</p>
+      <!-- Text label -->
     </a>
   </nav>
 
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <!-- Top navbar for small screens, hidden on larger screens using W3.CSS classes -->
     <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <!-- Bar within the navbar, styled with W3.CSS classes for background, opacity, and size -->
       <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+      <!-- Home link in the navbar -->
       <a href="#moments-in-time" class="w3-bar-item w3-button" style="width:25% !important">Moments In Time</a>
+      <!-- "Moments In Time" link in the navbar -->
       <a href="#wander-and-wonder" class="w3-bar-item w3-button" style="width:25% !important">Wander & Wonder</a>
+      <!-- "Wander & Wonder" link in the navbar -->
       <a href="#a-cup-for-every-season" class="w3-bar-item w3-button" style="width:25% !important">A Cup For Every
         Season</a>
+      <!-- "A Cup For Every Season" link in the navbar -->
     </div>
   </div>
 
   <!-- Section [1] Landing Page -->
   <div class="w3-padding-large" id="main">
+    <!-- Main content area, with padding and ID "main" -->
 
     <div class="home-container">
+      <!-- Container for the landing page content -->
       <img id="background-img" src="media\man-drinks-coffee-from-enamel-cup-outdoors.jpg"
         alt="Man drinks coffee from enamel cup outdoors">
+      <!-- Background image for the landing page -->
       <div class="top-centered">
+        <!-- Container for top-centered text -->
         <h1 id="landing-h1">- Relax with Alisa -</h1>
+        <!-- Main heading of the landing page -->
         <h2 id="landing-h2">Every Cup Tells A Story. Shall we begin?</h1>
+        <!-- Sub-heading of the landing page -->
       </div>
       <a href='#moments-in-time' class="bottom-centered" id="landing-start-button">Start</a>
+      <!-- Start button, linking to the "moments-in-time" section -->
       <a
         href="https://www.freepik.com/free-photo/man-drinks-coffee-from-enamel-cup-outdoors_11253682.htm#fromView=search&page=2&position=11&uuid=3fea329a-63ed-4464-8642-664a4ea90667&query=tea+outdoor">Designed
         by Freepik</a>
+      <!-- Link to image source attribution -->
     </div>
 
 
     <!-- Section [2] Moments in Time  -->
 
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="moments-in-time">
+      <!-- Section for "Moments in Time", styled with W3.CSS for content width, text alignment, color, and padding -->
       <h1 class="w3-text-black">Moments In Time</h1>
+      <!-- Section heading -->
       <hr style="width:200px; margin: 0px 0px 50px 0px" class="w3-opacity">
+      <!-- Horizontal rule for visual separation -->
 
-      <p class="w3-text-black">Imagine each moment as a finely crafted cup, brimming with a unique blend of experience. Here, you can choose your brew: 
+      <p class="w3-text-black">Imagine each moment as a finely crafted cup, brimming with a unique blend of experience. Here, you can choose your brew:
         <br><br>Will it be the gentle warmth of shared stillness, captured in tranquil scenes, or the playful tang of discovery, where hidden treasures await within interactive moments? Select your cup, and let time gently steep, unfolding its subtle flavors for you to savor.</p>
+      <!-- Section introduction paragraph -->
 
       <!-- Grid Option -->
       <center>
         <h2 class="w3-padding-16 w3-text-black">What would you like to do?</h2>
       </center>
+      <!-- Sub-heading for options -->
       <div class="w3-row-padding" style="margin:0px -16px 200px -16px">
+        <!-- Container for grid layout, using W3.CSS row padding and custom margins -->
         <div class="w3-half w3-margin-bottom">
+          <!-- First column in the grid, taking up half the width on medium/large screens -->
           <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <!-- Unordered list styled as a W3.CSS list, white background, centered text, opacity effects -->
             <li class="w3-indigo w3-xlarge w3-padding-32">Watch "Relax with Alisa" Videos</li>
+            <!-- List item with indigo background, large text, padding, and text content -->
             <li class="w3-padding-16">Relax & Make Tea Together</li>
+            <!-- List item with padding and text content -->
             <li class="w3-padding-16">Chat with Friends</li>
+            <!-- List item with padding and text content -->
             <li class="w3-padding-16">Study with Alisa</li>
+            <!-- List item with padding and text content -->
             <li class="w3-pale-blue w3-padding-24">
+              <!-- List item with pale blue background and padding -->
               <a href="#moments-in-time-choice-1" class="w3-button w3-white w3-padding-large w3-hover-indigo">I'd like
                 this!</a>
+              <!-- Button link within the list item, linking to "moments-in-time-choice-1" section -->
             </li>
           </ul>
         </div>
@@ -108,14 +169,22 @@
 
 
         <div class="w3-half">
+          <!-- Second column in the grid, taking up half the width on medium/large screens -->
           <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <!-- Unordered list, styled similarly to the first column's list -->
             <li class="w3-indigo w3-xlarge w3-padding-32">Play "Spot Special Objects!" Game</li>
+            <!-- List item similar to the first column's first list item -->
             <li class="w3-padding-16">Mysterious Room X</li>
+            <!-- List item with padding and text content -->
             <li class="w3-padding-16">Mysterious Room Y</li>
+            <!-- List item with padding and text content -->
             <li class="w3-padding-16">Mysterious Room Z</li>
+            <!-- List item with padding and text content -->
             <li class="w3-pale-blue w3-padding-24">
+              <!-- List item with pale blue background and padding -->
               <a href="#moments-in-time-choice-2" class="w3-button w3-white w3-padding-large w3-hover-indigo">I'd like
                 this!</a>
+              <!-- Button link within the list item, linking to "moments-in-time-choice-2" section -->
             </li>
           </ul>
         </div>
@@ -127,66 +196,96 @@
         <h2 id="moments-in-time-choice-1" class="w3-padding-16 w3-text-black"><strong>Watch "Relax with Alisa"
             Videos</strong></h2>
       </center>
+      <!-- Sub-section heading for video options -->
       <h2 class="w3-text-black">The Tea Room</h2>
+      <!-- Video category heading -->
       <p class="w3-text-black">Come and enjoy a serene outdoor setting. Step into a garden bathed in gentle sunlight, where the air hums with the quiet whisper of leaves. Imagine the delicate dance of steam rising from a freshly brewed cup, carrying the subtle fragrance of oolong or perhaps a floral infusion. Here, moments slow down, inviting you to savor the warmth in your hands and the tranquility of nature in every sip. Let the world outside fade as you steep in the quiet joys of life.</p>
+      <!-- Description of "The Tea Room" video experience -->
       <div class="video-container">
+        <!-- Container for the video iframe -->
         <iframe src="https://drive.google.com/file/d/1g9RxTGColbBhcYw-bS8QhNdWPmyMNPiS/preview" frameborder="0"
           allowfullscreen></iframe>
+        <!-- Iframe embedding a video from Google Drive -->
       </div>
 
       <h2 class="w3-text-black">The Lounge Room</h2>
+      <!-- Video category heading -->
       <p class="w3-text-black">Come and enjoy a nostalgic space for stories and friendship bonding. Sink into the embrace of plush cushions in a room where time seems to soften at the edges. Sunlight streams through the window, illuminating dust motes dancing in the air, each one a tiny memory waiting to be awakened. This is a space for shared laughter and hushed confidences, where stories unfold over steaming cups, weaving threads of connection that warm the soul. Let the echoes of conversations past and the thought of new ones envelop you in a comforting nostalgia.</p>
+      <!-- Description of "The Lounge Room" video experience -->
       <div class="video-container">
+        <!-- Container for the video iframe -->
         <iframe src="https://drive.google.com/file/d/1zttvcp7s_lGbx4NR8D9vWrK4VpWdSWr8/preview" frameborder="0"
           allowfullscreen></iframe>
+        <!-- Iframe embedding a video from Google Drive -->
       </div>
 
       <h2 class="w3-text-black">The Study Room</h2>
+      <!-- Video category heading -->
       <p class="w3-text-black">Come and enjoy a cozy campus corner. Find your focus in a sun-drenched corner of campus, where the gentle murmur of turning pages and the soft glow of a screen create a haven for thought. The scent of old books mingles with the comforting aroma of brewing tea, a quiet invitation to delve into worlds both real and imagined. Here you can enjoy studying with me, or simply watch me. </p>
+      <!-- Description of "The Study Room" video experience -->
       <div class="video-container">
+        <!-- Container for the video iframe -->
         <iframe src="https://drive.google.com/file/d/1U9LDaqcO8N3CoIPh330HD9NUhDARqKNB/preview" frameborder="0"
           allowfullscreen></iframe>
+        <!-- Iframe embedding a video from Google Drive -->
       </div>
 
 
       <div id="section-break"></div>
+      <!-- Section break divider -->
 
 
       <center>
         <h2 id="moments-in-time-choice-2" class="w3-padding-16 w3-text-black"><strong>Play "Spot Special Objects!"
             Game</strong></h2>
       </center>
+      <!-- Sub-section heading for the game option -->
       <p class="w3-text-black">Curiosity beckons you into rooms veiled in gentle mystery. Within these tranquil spaces, two objects hold a subtle enchantment, waiting to be discovered by a keen eye and a playful spirit. Click on your intuition, and perhaps, a gentle chime will reward your quest, unlocking a moment of delightful surprise in the quiet game room.</p>
+      <!-- Game introduction paragraph -->
       <h2 class="w3-text-black">Mysterious Room X</h2>
+      <!-- Game room heading -->
       <p class="w3-text-black"> Find the two special objects by clicking on your guess!</p>
+      <!-- Game instruction -->
 
 
       <!-- The Modal -->
       <div id="congrats-modal-room1" class="modal">
+        <!-- Modal for congratulations message in Room 1, initially hidden -->
 
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close">&times;</span>
+          <!-- Content area of the modal -->
+          <span class="close">×</span>
+          <!-- Close button for the modal -->
           <center>
             <p>Congratulations on finding a Special Object!</p>
           </center>
+          <!-- Congratulations message in the modal -->
         </div>
 
       </div>
       <div class="img-container">
+        <!-- Container for the room image and interactive elements -->
         <img class="room-img" src="media\igor-starkov--Vgscuq5MN8-unsplash.jpg"
           alt="brown wooden dining set inside house">
+        <!-- Room image for Mysterious Room X -->
 
         <button onclick="openModal(), openPopup()" class="popup room1-special-object" id="room1-mug">
+          <!-- Interactive button representing a special object (mug) in Room 1. Calls Javascript functions to open modal and popup on click -->
           <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <!-- Audio element for sound effect when special object is found -->
           <span class="popuptext" id="myPopup">A cup of unknown substance... probably coffee.</span>
+          <!-- Popup text displayed when hovering or clicking the button -->
 
         </button>
 
         <button onclick="openModal(), openPopup()" class="popup room1-special-object" id="room1-potted-plant">
+          <!-- Interactive button for another special object (potted plant) in Room 1 -->
           <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <!-- Audio element (note: same ID as previous audio, might need unique IDs for each if simultaneous playback is needed) -->
           <span class="popuptext" id="myPopup">A potted plant positioned well to receive sunlight. Sunlight is important
             for our growth!</span>
+          <!-- Popup text for the potted plant button -->
         </button>
 
       </div>
@@ -197,40 +296,55 @@
             href="https://unsplash.com/photos/brown-wooden-dining-set-inside-house--Vgscuq5MN8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </p>
       </center>
+      <!-- Image attribution for Room X image -->
 
 
 
 
       <h2 class="w3-text-black">Mysterious Room Y</h2>
+      <!-- Game room heading -->
       <p class="w3-text-black"> Find the two special objects by clicking on your guess! </p>
+      <!-- Game instruction -->
 
       <!-- The Modal -->
       <div id="congrats-modal-room2" class="modal">
+        <!-- Modal for congratulations message in Room 2 -->
 
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close">&times;</span>
+          <!-- Content area of the modal -->
+          <span class="close">×</span>
+          <!-- Close button for the modal -->
           <center>
             <p>Congratulations on finding a Special Object!</p>
           </center>
+          <!-- Congratulations message -->
         </div>
 
       </div>
 
       <div class="img-container">
+        <!-- Container for room image and interactive elements -->
         <img class="room-img" src="media\toa-heftiba-kWKrV66C_8Y-unsplash.jpg"
           alt="white wooden shelf near wooden table">
+        <!-- Room image for Mysterious Room Y -->
 
         <button onclick="openModal(), openPopup()" class="popup room2-special-object" id="room2-cooking-pan">
+          <!-- Interactive button for special object (cooking pan) in Room 2 -->
           <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <!-- Audio element -->
           <span class="popuptext" id="myPopup">Perhaps a cooking pan. In that case, you can use it for high-heat cooking methods like sauteing, frying, searing, and reducing.</span>
+          <!-- Popup text for cooking pan button -->
 
         </button>
 
         <button onclick="openModal(), openPopup()" class="popup room2-special-object" id="room2-coffee-beans">
+          <!-- Interactive button for special object (coffee beans) in Room 2 -->
           <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <!-- Audio element -->
           <span class="popuptext" id="myPopup">
-          A packet displaying "Don Enrique." So it possibly contains beans from Nariño, southernmost district of Colombia. One might expect chocolate and cherry flavors, and a creamy body.</span>
+            A packet displaying "Don Enrique." So it possibly contains beans from Nariño, southernmost district of Colombia. One might expect chocolate and cherry flavors, and a creamy body.</span>
+          <!-- Popup text for coffee beans button -->
         </button>
       </div>
       <center>
@@ -241,44 +355,59 @@
             href="https://unsplash.com/photos/white-wooden-shelf-near-wooden-table-kWKrV66C_8Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </p>
       </center>
+      <!-- Image attribution for Room Y image -->
 
 
       <h2 class="w3-text-black">Mysterious Room Z</h2>
+      <!-- Game room heading -->
       <p class="w3-text-black"> Find the two special objects by clicking on your guess! </p>
+      <!-- Game instruction -->
 
       <!-- The Modal -->
       <div id="congrats-modal-room3" class="modal">
-      
+        <!-- Modal for congratulations message in Room 3 -->
+
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close">&times;</span>
+          <!-- Content area of the modal -->
+          <span class="close">×</span>
+          <!-- Close button for the modal -->
           <center>
             <p>Congratulations on finding a Special Object!</p>
           </center>
+          <!-- Congratulations message -->
         </div>
-      
+
       </div>
 
       <div class="img-container">
+        <!-- Container for room image and interactive elements -->
         <img class="room-img" src="media\sebastian-schuppik-H7xTpvBjJS4-unsplash.jpg" alt="tables and chairs inside building">
-      
+        <!-- Room image for Mysterious Room Z -->
+
         <button onclick="openModal(), openPopup()" class="popup room3-special-object" id="room3-cafe-sign">
+          <!-- Interactive button for special object (cafe sign) in Room 3 -->
           <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <!-- Audio element -->
           <span class="popuptext" id="myPopup">Berlinka. It is not only a traditional old fashioned cafe with high ceilings
             and thonet chairs, it is also the café of the Slovak National Gallery, a social space for various events, such as
             book launches, workshops, discussions, lectures, film screenings, concerts, and parties.</span>
+          <!-- Popup text for cafe sign button -->
         </button>
-      
+
         <button onclick="openModal(), openPopup()" class="popup room3-special-object" id="room3-piano">
+          <!-- Interactive button for special object (piano) in Room 3 -->
           <audio id="audio" src="media\588234__mehraniiii__win.wav"></audio>
+          <!-- Audio element -->
           <span class="popuptext" id="myPopup">
             We might not know how old this piano is, but it's said that over 125 years ago the Berlin family bought The Café
             Hungária from Mr Orbane and renamed it Café Berlin (now Cafe Berlinka). Local doctors, officers, and the cream of
             Viennese society would come and meet after disembarking the tram at the last stop from Vienna. Perhaps this piano
             still stands from old times.</span>
+          <!-- Popup text for piano button -->
         </button>
       </div>
-      
+
       <center>
         <p class="w3-text-grey">
           Photo by <a
@@ -287,19 +416,26 @@
             href="https://unsplash.com/photos/tables-and-chairs-inside-building-H7xTpvBjJS4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </p>
       </center>
+      <!-- Image attribution for Room Z image -->
     </div>
 
     <!-- Section [3] Wander & Wonder -->
     <div class="w3-padding-64 w3-content" id="wander-and-wonder">
-      <h1 class="w3-text-black">Wander & Wonder</h2>
-        <hr style="width:200px" class="w3-opacity">
+      <!-- Section for "Wander & Wonder" -->
+      <h1 class="w3-text-black">Wander & Wonder</h1>
+      <!-- Section heading -->
+      <hr style="width:200px" class="w3-opacity">
+      <!-- Horizontal rule -->
       <p class="w3-text-black">Unfurl the map of your mind and let your spirit roam free. From sun-drenched shores to snow-kissed peaks, from bustling cityscapes to serene countryside paths, the world unfolds in a kaleidoscope of moments waiting to be savored. Each image is a postcard from a journey, a whisper of distant lands and the quiet thrill of exploration. Let your gaze wander and allow your heart to wonder at the boundless beauty that surrounds us.</p>
+      <!-- Section introduction paragraph -->
     </div>
 
-   
+
 
     <div class="row">
+      <!-- Container for image gallery in a row layout -->
       <div class="column">
+        <!-- Column for images in the gallery -->
         <img src="media/20220401_115015.jpg">
         <img src="media/20220401_120911.jpg">
         <img src="media/20230702_113652.jpg">
@@ -315,6 +451,7 @@
         <img src="media/20250202_193753.jpg">
       </div>
       <div class="column">
+        <!-- Column for images in the gallery -->
         <img src="media/20220317_124315.jpg">
         <img src="media/20211024_135648.jpg">
         <img src="media/20230630_110621.jpg">
@@ -330,6 +467,7 @@
         <img src="media/20230827_203200.jpg">
       </div>
       <div class="column">
+        <!-- Column for images in the gallery -->
         <img src="media/20221119_153735.jpg">
         <img src="media/20211024_143554.jpg">
         <img src="media/20230630_110058.jpg">
@@ -345,6 +483,7 @@
         <img src="media/20230827_203213.jpg">
       </div>
       <div class="column">
+        <!-- Column for images in the gallery -->
         <img src="media/20230823_182322.jpg">
         <img src="media/20230207_135140.jpg">
 
@@ -365,66 +504,104 @@
 
     <!-- Section [4] A Cup For Every Season  -->
     <div class="w3-padding-64 w3-content w3-text-grey" id="a-cup-for-every-season">
+      <!-- Section for "A Cup For Every Season" -->
       <h1 class="w3-text-black">A Cup for Every Season</h1>
+      <!-- Section heading -->
       <hr style="width:200px" class="w3-opacity">
+      <!-- Horizontal rule -->
 
       <p class="w3-text-black">Just as nature paints the world anew with each passing season, so too can your cup reflect the changing rhythms of time. Imagine the crisp, spiced warmth of autumn in a steaming mug, the comforting embrace of winter's cocoa, the vibrant freshness of spring's herbal infusion, or the sun-drenched zest of summer's iced tea. Let each cup be a sensory journey, a taste of the unique challenges and joys that each season holds, that I encourage we can be thankful for.</p>
+      <!-- Section introduction paragraph -->
 
 
       <!-- Slideshow container -->
       <div class="slideshow-container">
+        <!-- Container for image slideshow -->
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
+          <!-- Slide container for the first image -->
           <div class="numbertext">1 / 6</div>
+          <!-- Slide number text -->
           <img src="media/20211101_110147_fall.jpg" style="width:100%">
+          <!-- Image for the slide -->
           <div class="text">Fall Season (In United Kingdom)</div>
+          <!-- Caption text for the slide -->
         </div>
 
         <div class="mySlides fade">
+          <!-- Slide container for the second image -->
           <div class="numbertext">2 / 6</div>
+          <!-- Slide number text -->
           <img src="media/20211128_172657_winter.jpg" style="width:100%">
+          <!-- Image for the slide -->
           <div class="text">Winter Season (In United Kingdom)</div>
+          <!-- Caption text for the slide -->
         </div>
 
         <div class="mySlides fade">
+          <!-- Slide container for the third image -->
           <div class="numbertext">3 / 6</div>
+          <!-- Slide number text -->
           <img src="media/20230511_205144_spring.jpg" style="width:100%">
+          <!-- Image for the slide -->
           <div class="text">Spring Season (In United Kingdom)</div>
+          <!-- Caption text for the slide -->
         </div>
 
         <div class="mySlides fade">
+          <!-- Slide container for the fourth image -->
           <div class="numbertext">4 / 6</div>
+          <!-- Slide number text -->
           <img src="media/20220916_181037_summer.jpg" style="width:100%">
+          <!-- Image for the slide -->
           <div class="text">Summer Season (In United Kingdom)</div>
+          <!-- Caption text for the slide -->
         </div>
 
         <div class="mySlides fade">
+          <!-- Slide container for the fifth image -->
           <div class="numbertext">5 / 6</div>
+          <!-- Slide number text -->
           <img src="media/20230630_110303_dry_indonesia.jpg" style="width:100%">
+          <!-- Image for the slide -->
           <div class="text">Dry Season (In Indonesia)</div>
+          <!-- Caption text for the slide -->
         </div>
 
         <div class="mySlides fade">
+          <!-- Slide container for the sixth image -->
           <div class="numbertext">6 / 6</div>
+          <!-- Slide number text -->
           <img src="media/20201205_171606_rainy_indonesia.jpg" style="width:100%">
+          <!-- Image for the slide -->
           <div class="text">Rainy Season (In Indonesia)</div>
+          <!-- Caption text for the slide -->
         </div>
 
         <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <!-- Previous slide button -->
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <!-- Next slide button -->
       </div>
       <br>
 
       <!-- The dots/circles -->
       <div style="text-align:center">
+        <!-- Container for slide navigation dots, centered text -->
         <span class="dot" onclick="currentSlide(1)"></span>
+        <!-- Dot for the first slide -->
         <span class="dot" onclick="currentSlide(2)"></span>
+        <!-- Dot for the second slide -->
         <span class="dot" onclick="currentSlide(3)"></span>
+        <!-- Dot for the third slide -->
         <span class="dot" onclick="currentSlide(4)"></span>
+        <!-- Dot for the fourth slide -->
         <span class="dot" onclick="currentSlide(5)"></span>
+        <!-- Dot for the fifth slide -->
         <span class="dot" onclick="currentSlide(6)"></span>
+        <!-- Dot for the sixth slide -->
       </div>
       <!-- End Portfolio Section -->
     </div>
@@ -435,34 +612,50 @@
 
 
     <div class="w3-padding-64 w3-content w3-text-grey" id="share-your-tales">
+      <!-- Section for "Share Your Tales" -->
       <h1 class="w3-text-black">Share Your Tales</h1>
+      <!-- Section heading -->
       <hr style="width:200px" class="w3-opacity">
+      <!-- Horizontal rule -->
 
       <p class="w3-text-black"><b>Feel free to reach out to me using the following contacts:</b> </p>
+      <!-- Contact information introduction -->
 
       <div class="w3-section">
+        <!-- Container for contact details -->
         <p class="w3-text-black"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Whatsapp: +62 811 8777 085</p>
+        <!-- Whatsapp contact detail -->
         <p class="w3-text-black"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: alisavictory7@gmail.com</p>
+        <!-- Email contact detail -->
         <p class="w3-text-black"><i class="fab fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Instagram: alisa_victory7</p>
+        <!-- Instagram contact detail -->
       </div><br>
 
       <p class="w3-text-black fa-bold"><b>Alternatively, share your tale at your convenience:</b> </p>
+      <!-- Story submission form introduction -->
 
 
       <div id="share-your-tales-bg-img">
+        <!-- Container with background image for the form area (defined in CSS) -->
 
-        
-        <form action="mailto:alisavictory7@gmail.com?subject=New%20Story%20Submission" 
-      method="POST" 
+
+        <form action="mailto:alisavictory7@gmail.com?subject=New%20Story%20Submission"
+      method="POST"
       enctype="text/plain"
       onsubmit="setTimeout(() => { window.location.href = 'thank-you.html'; }, 1000);" class="container">
+          <!-- Form for story submission, sending email using mailto, and redirecting to thank-you page after submission -->
           <p>Let's get in touch. Send me a message:</p>
+          <!-- Form introductory text -->
 
           <label for="name">Username:</label>
+          <!-- Label for username input field -->
           <p><input class="w3-input w3-padding-16" type="text" placeholder="Username"  id="name" name="name" required></p>
-          
+          <!-- Username input field -->
+
           <label for="story">Your Story:</label>
+          <!-- Label for story textarea -->
           <p></p><textarea class="w3-input w3-padding-16" type="text" id="story" placeholder="Message" name="story" rows="5" required></textarea>
+          <!-- Story textarea field -->
 
 
           <p>
@@ -470,6 +663,7 @@
               <i class="fa fa-paper-plane"></i> SHARE STORY
             </button>
           </p>
+          <!-- Submit button for the form -->
         </form>
         <!-- End Contact Section -->
 
@@ -480,8 +674,10 @@
 
 
     <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <!-- Footer section -->
       <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
           class="w3-hover-text-green">w3.css</a></p>
+      <!-- Footer text with link to W3.CSS -->
       <!-- End footer -->
     </footer>
 
@@ -490,6 +686,7 @@
 
   <!-- link to javascript file -->
   <script src="script.js"></script>
+  <!-- Links to an external Javascript file named "script.js" -->
 
 </body>
 
