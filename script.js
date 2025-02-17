@@ -2,35 +2,37 @@
 // Initialize audio for win sound effect
 const winSound = new Audio('media/588234__mehraniiii__win.wav');
 
-// --- Image Slideshow Functionality ---
-let slideIndex = 1; // Initialize slide index to start from the first slide
-showSlides(slideIndex); // Display the initial slide
+let slideIndex = [1,1];
+/* Class the members of each slideshow group with different CSS classes */
+let slideId = ["mySlides1", "mySlides2"]
+let dotClasses = ["dot1", "dot2"];
+showSlides(1, 0);
+showSlides(1, 1);
 
-// Function to move to the next or previous slide
-function plusSlides(n) {
-  showSlides(slideIndex += n); // Increment/decrement slide index and show the slide
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
 }
 
-// Function to set the current slide based on dot click
-function currentSlide(n) {
-  showSlides(slideIndex = n); // Set slide index to the clicked dot number and show the slide
+function currentSlide(n, no) {
+  showSlides(slideIndex[no] = n, no);
 }
 
-// Function to display slides and update dot indicators
-function showSlides(n) {
+
+function showSlides(n, no) {
   let i;
-  let slides = document.getElementsByClassName("mySlides"); // Get all elements with class "mySlides" (slides)
-  let dots = document.getElementsByClassName("dot"); // Get all elements with class "dot" (slide indicators)
-  if (n > slides.length) {slideIndex = 1} // If slide index exceeds number of slides, reset to the first slide
-  if (n < 1) {slideIndex = slides.length} // If slide index is less than 1, set to the last slide
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; // Hide all slides
+  let x = document.getElementsByClassName(slideId[no]);
+  let dots = document.getElementsByClassName(dotClasses[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", ""); // Remove "active" class from all dots
-  }
-  slides[slideIndex-1].style.display = "block"; // Display the current slide (index is 1-based)
-  dots[slideIndex-1].className += " active"; // Add "active" class to the current slide's dot indicator
+  // Deactivate all dots
+  Array.from(dots).forEach(dot =>
+    dot.className = dot.className.replace(" active", ""));
+
+  x[slideIndex[no]-1].style.display = "block";
+  dots[slideIndex[no]-1].className += " active";
 }
 
 // --- Game Popup and Modal Logic for Room 1 ---

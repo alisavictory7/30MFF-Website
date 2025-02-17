@@ -269,19 +269,19 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 
 /* --- Responsive Image Grid Styles - BEGIN --- */
-.row {
+.ww-row {
   display: flex; /* Enables flexbox layout */
   flex-wrap: wrap; /* Allows items to wrap to the next line */
   padding: 0 4px;
 }
 
-.column {
+.ww-column {
   flex: 25%; /* Each column takes 25% width in a row */
   max-width: 25%;
   padding: 0 4px;
 }
 
-.column img {
+.ww-column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%; /* Image takes full width of the column */
@@ -302,6 +302,42 @@ body, h1,h2,h3,h4,h5,h6 {
     max-width: 100%;
   }
 }
+
+/* --- Responsive Image Grid Styles - BEGIN --- */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 /* --- Responsive Image Grid Styles - END --- */
 
 
@@ -316,7 +352,7 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 
 /* --- Hide Slides by Default --- */
-.mySlides {
+.mySlides1, mySlides2 {
   display: none;
 }
 
@@ -334,6 +370,12 @@ body, h1,h2,h3,h4,h5,h6 {
   transition: 0.6s ease; /* Smooth transition for hover effect */
   border-radius: 0 3px 3px 0;
   user-select: none; /* Prevents text selection on button click */
+}
+
+/* Ensure prev and next are visible for all slides */
+.slideshow-container .prev,
+.slideshow-container .next {
+    display: block; /* Override any hiding */
 }
 
 /* --- Position "Next Button" to the Right --- */
@@ -368,7 +410,7 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 
 /* --- Slideshow Dots/Indicators --- */
-.dot {
+.dot1, .dot2 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -379,7 +421,7 @@ body, h1,h2,h3,h4,h5,h6 {
   transition: background-color 0.6s ease; /* Smooth transition for active/hover state */
 }
 
-.active, .dot:hover {
+.active, .dot1:hover, .dot2:hover {
   background-color: #717171; /* Darker background for active/hover dots */
 }
 
@@ -393,7 +435,8 @@ body, h1,h2,h3,h4,h5,h6 {
   from {opacity: .4}
   to {opacity: 1}
 }
-/* --- Slideshow Styles - END --- */
+/* --- A Cup For Every Season Slideshow Styles - END --- */
+
 
 /* --- Form on Image Styles - BEGIN --- */
 
